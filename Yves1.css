@@ -1,0 +1,193 @@
+/* style global */
+.profil {
+   
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+body {
+    font-family: 'poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f9fafb;
+    color: #333;
+    line-height: 1.6;
+    background-image: url(lune.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Titres */
+h1, h2, h3 {
+    color: #1e3a8a;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Sections */
+section {
+    padding: 60px 20px;
+    text-align: center;
+    color: white;
+}
+
+/* Header + Menu */
+header {
+    background: rgba(10, 10, 30, 0.6);
+    padding: 15px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #fbbf24;
+    transform: scale(1.05);
+}
+
+/* MENU HAMBURGER */
+.menu-toggle {
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+/* Projets */
+#Projets {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.projet {
+    background: rgba(10, 10, 30, 0.6);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+    color: white;
+    transition: transform 0.3s;
+}
+
+.projet:hover {
+    transform: translateY(-10px);
+}
+
+.projet h3 {
+    color: #9bb4ff;
+}
+
+.projet a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    background: #738ec9;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.projet a:hover {
+    background: #1e3a8a;
+}
+
+/* CV Section */
+#CV, #propos {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(10, 10, 30, 0.6);
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+}
+
+.cv-btn {
+    display: inline-block;
+    margin-top: 12px;
+    text-decoration: none;
+    background: #444;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.cv-btn:hover {
+    background: #777;
+}
+
+/* Contact */
+#contact {
+    background: rgba(10,10,30,0.6);
+    color: white;
+    padding: 60px 20px;
+}
+
+#contact a {
+    color: #fbbf24;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* RESPONSIVE - MENU HAMBURGER */
+@media (max-width: 600px) {
+
+    .menu-toggle {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background: #111;
+        padding: 15%;
+        border-top: 1px solid #222;
+        gap: 18px;
+        text-align: center;
+        /*animation*/
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease, opacity 0.4s ease, padding 0.3s ease;
+    }
+
+    nav ul.show {
+        max-height: 500px; /* assez pour tout afficher */
+        opacity: 1;
+        padding: 15px 0;
+        display: flex;
+    }
+}

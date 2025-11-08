@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="Yves1.css">
+</head>
+<body>
+    
+    <!-- ======Menu====== -->
+     <header>
+      <h2 class="logo">Mon portfolio</h2>
+      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+        <nav>
+            <ul id="menu">
+                <li><a href="#accueil">accueil</a></li>
+                <li><a href="#propos">propos</a></li>
+                <li><a href="#CV">CV</a></li>
+                <li><a href="#Projets">Projets</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </nav>
+     </header>
+     <!-- ======Section Accueil====== -->
+      <section id="accueil">
+        <img src="derick.jpg" alt="photo de profil" class="profil">
+        <h1>Bienvenue, je suis FOTUE GOKA YVES Derick Développeur Web</h1>
+        <p> Le dévelopeur web est celui là qui conçoit et maintient les sites internets ou des applications web.</p>
+
+      </section>
+     <!-- ======Section a propos====== -->
+      <section id="propos">
+        <h2>à propos de moi</h2>
+        <p>je suis étudiant en informatique à l'institut africaine d'informatique IAI centre de Douala. Je m'intéresse au developpement logiciel. je suis tres passionné par la création des sites et applications Web, toujours à l'affue des nouvelles technologies. Je peux me nommer comme un dévelopeur fullstack car maitrisant les technologies back-end et front-end. <br>
+        Mon objectif est de concevoir des sites Web performants, intuitifs et adaptés aux besoins des utilisateurs. <br>en dehors du codage, j'aime explorer les nouvelles tendances technologies et contribuer à des projets open source.</p>
+
+      </section>
+     <!-- ======Section CV====== -->
+      <section id="CV">
+        <h2>Mon CV</h2> 
+        <p>voici un aperçu de mon parcours. vous pouvez aussi le télécharger ci-dessous:</p>
+        <a class="cv-btn" href="CV.pdf" target="_blank" >voir mon cv</a>
+      </section>
+     <!-- ======Section Projets====== -->
+     <section id="Projets">
+        <h2>mes projets</h2> 
+        <div class="projet">
+          <h3>projet 1: Realisation d'une calculatrice</h3>
+          <p>c'est une application web realisé avec du HTML, CSS et JAVASCRIPT. c'est ue application avec une memoire local permettant de sauvegarder les calculs effectués</p>
+          <a href="Calculatrice_html.html">calculatrice</a>
+        </div>
+        <div class="projet">
+          <h3>projet 2: site portfolio personnel</h3>
+          <p>un site web pour présenter mes compétences, mes projets et mon parcours professionnel</p>
+        </div>
+      </section>
+     <!-- ======Section contact ====== -->
+      <section id="contact">
+        <h2>contact</h2>
+        <p> Email: <a href="yvesfotué75@gmail.com">yvesfotué75@gmail.com</a></p>
+        <p>linkedln:<a href="https://linkedln.com/in/Derick Fotué" target="_blank"> Derick Fotué</a> | Twitter: <a href="https://twitter.com/in/derick_yve2653" target="_blank">derick_yve2653</a> |Guithub: <a href="https://guithub.com/in/Derickyves23" target="_blank">Derickyves23</a></p>
+      </section>
+      <script>
+        const toggle = document.getElementById('menu-toggle');
+        const menu= document.getElementById('menu');
+        toggle.addEventListener('click',()=>{menu.classList.toggle('show');});
+      </script>
+</body>
+</html>
